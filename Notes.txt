@@ -330,3 +330,35 @@ summary
 Ex.
 
 clock(s) with different timeZone
+
+
+
+---------------------------------------------------------------------------
+to create new react application
+---------------------------------------------------------------------------
+
+> node -v
+> npm -v
+> npm i -g yarn
+> npm i -g create-react-app
+
+on workspace
+
+> create-react-app <app-name>
+> cd <app-name>
+
+> npm start or yarn start
+
+
+---------------------------------------------------------------------------
+react topics
+---------------------------------------------------------------------------
+
+  - props & state 
+  - component life-cycle methods
+  - context 
+  - higher-order-component design patterns
+  - pure components
+
+
+---------------------------------------------------------------------------
