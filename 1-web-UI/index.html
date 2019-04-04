@@ -11,8 +11,37 @@
 </head>
 
 <body class="container">
+
     <hr />
     <h1>web UI</h1>
+    <hr />
+    <x-counter value="10"></x-counter>
+    <x-counter value="20"></x-counter>
+    <hr />
+    <div id="box1" class="alert alert-danger">
+        <input id="inp1" type="number" onchange="handler()" />
+        <hr />
+        <span id="disp" class="badge badge-primary">0</span>
+    </div>
+
+    <script>
+        let inp1 = document.getElementById('inp1');
+        const store = {
+            count: 0
+        }
+        setInterval(() => {
+            store.count++
+            inp1.value = store.count;
+            inp1.dispatchEvent(new Event('change'))
+        }, 2000);
+
+        function handler() {
+            document.getElementById('disp').innerHTML = store.count * 10 <= 100 ? store.count * 10 : 'No More';
+        }
+
+    </script>
+
+
     <hr />
     <span id="time" class="badge badge-danger">time</span>
     <hr />
