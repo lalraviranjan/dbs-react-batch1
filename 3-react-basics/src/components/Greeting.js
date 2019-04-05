@@ -18,6 +18,19 @@ class Greeting extends React.Component {
             </div>
         )
     }
+    componentDidMount() {
+        console.log("Greeting :: componentDidMount()");
+        this.interval = setInterval(() => {
+            this.forceUpdate();
+        }, 1000)
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log("Greeting :: componentDidUpdate()");
+    }
+    componentWillUnmount() {
+        console.log("Greeting :: componentWillUnmount()");
+        clearInterval(this.interval);
+    }
 }
 
 export default Greeting;

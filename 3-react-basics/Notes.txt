@@ -1,0 +1,11 @@
+
+
+react basics
+-------------
+
+
+1. props & state 
+2. inter component communication
+3. component's life cycle       
+4. container components
+5. context 
