@@ -12,3 +12,4 @@ ReactDOM.render(<App title="react basics" trainer={"Nag"} />, document.getElemen
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+ 
